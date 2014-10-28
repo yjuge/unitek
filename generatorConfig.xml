@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<!-- <generatorConfiguration >
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/bkytest" userId="root" password="1234" />
+    <javaModelGenerator targetPackage="com.bky" targetProject="ssm" />
+    <sqlMapGenerator targetPackage="com.bky" targetProject="ssm" />
+    <javaClientGenerator targetPackage="com.bky" targetProject="ssm" type="XMLMAPPER" />
+    <table schema="" tableName="tadd">
+      <columnOverride column="???" property="???" />
+    </table>
+  </context>
+</generatorConfiguration> -->
+<generatorConfiguration >
+ <classPathEntry location="D:/projects/sqlitejdbc-v056.jar" />
+  <context id="context1" >
+    <jdbcConnection driverClass="org.sqlite.JDBC" connectionURL="jdbc:sqlite:D:/projects/bkytest.db" userId="" password="" />
+    <javaModelGenerator targetPackage="com.bky" targetProject="unitek" />
+    <sqlMapGenerator targetPackage="com.bky" targetProject="unitek" />
+    <javaClientGenerator targetPackage="com.bky" targetProject="unitek" type="XMLMAPPER" />
+    <table schema="" tableName="TB_LEIBXXB" > 
+    <!-- <table schema="" tableName="TB_LEIBXXB" domainObjectName="Leibxxb" enableCountByExample="false" enableUpdateByExample="false"
+	enableDeleteByExample="false" enableSelectByExample="false"
+	selectByExampleQueryId="false"> -->
+      <!-- <columnOverride column="???" property="???" /> -->
+    </table>
+  </context>
+</generatorConfiguration>
